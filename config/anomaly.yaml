@@ -1,0 +1,10 @@
+resolution_outlier:
+  method: per_priority_iqr
+  k: 1.5
+stale_unresolved:
+  priorities: [High, Critical]
+  age_hours: 24
+response_sla:
+  default_hours: 4
+data_integrity:
+  rule: resolution_time_hrs < response_time_hrs
